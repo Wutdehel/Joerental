@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../layout/Container';
 import Button from '../ui/Button';
-import openingBg from '../../assets/opening.jpg';
+import openingBg from '../../assets/opening.jpeg';
 import whatsappIcon from '../../assets/whatsapp.png';
 
 const HeroSection = () => {
