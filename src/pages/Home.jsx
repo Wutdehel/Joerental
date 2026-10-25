@@ -21,7 +21,7 @@ const Home = () => {
       <ConcreteGradesSection />
       <PumpServiceSection />
       <PricingSection />
-      <GallerySection />
+      {/* <GallerySection /> */}
       <OrderingSection />
       <FAQSection />
       <CTASection />

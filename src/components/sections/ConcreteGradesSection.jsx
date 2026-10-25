@@ -1,17 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Container from '../layout/Container';
 import Button from '../ui/Button';
-import mutuImage from '../../assets/mutu.png';
-import whatsappIcon from '../../assets/whatsapp.png'; 
+import mutuImage from '../../assets/zenix/Group 4.jpg';
+import whatsappIcon from '../../assets/whatsapp.png';
+import ImageCarouselModal from '../ui/ImageCarousel';
+
+const zenixModules = import.meta.glob(
+  '../../assets/zenix/*.{png,jpg,jpeg,webp}',
+  { eager: true, import: 'default' },
+);
+const zenixImages = Object.keys(zenixModules)
+  .sort() // urut sesuai nama file
+  .map((key) => zenixModules[key]);
 
 const ConcreteGradesSection = () => {
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+
   const grades = [
-    'K225 FA / NFA',
-    'K250 FA / NFA',
-    'K300 FA / NFA',
-    'K350 FA / NFA',
-    'K400 FA / NFA',
-    'K450 FA / NFA'
+    'Interior Nyaman: Kabin luas dengan kursi ergonomis dan AC yang sejuk',
+    'Perjalanan Halus: Suspensi modern yang minim guncangan untuk anak-anak dan lansia',
+    'Kapasitas: 6 – 7 Penumpang',
+    'Kabin Modern: Fitur hiburan lengkap & pengisian daya gadget di setiap baris',
   ];
 
   const scrollToOrdering = () => {
@@ -22,61 +31,58 @@ const ConcreteGradesSection = () => {
   };
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "628988882945"; 
-    const message = `Halo MatrixBeton, saya ingin pesan:
+    const phoneNumber = '6285885053055';
+    const message = `Halo Joe Rental, saya ingin bertanya mengenai kesediaan mobil innova zennix untuk disewakan. Mohon Infonya, terima kasih.`;
 
-- Mutu: [K225/K250/dll]
-- Volume: [angka] m³
-- Lokasi: [alamat]
-
-Mohon info ketersediaan. Terima kasih.`;
-    
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-white">
+    <section className="py-16 md:py-24 lg:py-32 bg-white" id="zenix">
       <Container>
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-20">
-          
           <div className="w-full h-full flex">
-            <div 
+            <div
               className="w-full bg-cover bg-center bg-no-repeat rounded-2xl"
-              style={{ 
+              style={{
                 backgroundImage: `url(${mutuImage})`,
                 minHeight: '400px',
-                height: '100%'
+                height: '100%',
               }}
-            >
-            </div>
+            ></div>
           </div>
 
           <div className="flex flex-col justify-start">
             <h2 className="font-cabin font-bold text-primary-black text-2xl md:text-4xl lg:text-5xl mb-4">
-              MUTU BETON YANG TERSEDIA
+              Innova Zenix <br />
             </h2>
-            
+
             <p className="font-poppins text-gray-medium text-base md:text-lg lg:text-xl mb-8 leading-relaxed">
-              Kami menyediakan mutu beton sesuai kebutuhan struktur bangunan Anda:
+              Kami Menyediakan Mobil Innova Zenix dengan kondisi seperti berikut
+              Anda:
             </p>
 
             <div className="grid grid-cols-2 gap-x-8 gap-y-3 mb-8">
               <div className="space-y-3">
-                {grades.slice(0, 3).map((grade, index) => (
+                {grades.slice(0, 2).map((grade, index) => (
                   <div key={index} className="flex items-start gap-2">
-                    <span className="text-primary-black text-lg md:text-xl">-</span>
+                    <span className="text-primary-black text-lg md:text-xl">
+                      -
+                    </span>
                     <span className="font-poppins font-bold text-primary-black text-base md:text-lg">
                       {grade}
                     </span>
                   </div>
                 ))}
               </div>
-              
+
               <div className="space-y-3">
-                {grades.slice(3, 6).map((grade, index) => (
+                {grades.slice(2, 4).map((grade, index) => (
                   <div key={index} className="flex items-start gap-2">
-                    <span className="text-primary-black text-lg md:text-xl">-</span>
+                    <span className="text-primary-black text-lg md:text-xl">
+                      -
+                    </span>
                     <span className="font-poppins font-bold text-primary-black text-base md:text-lg">
                       {grade}
                     </span>
@@ -86,31 +92,46 @@ Mohon info ketersediaan. Terima kasih.`;
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                variant="whatsapp" 
+              <Button
+                variant="whatsapp"
                 size="default"
                 onClick={handleWhatsAppClick}
                 className="px-10 py-3 text-base md:text-lg font-bold flex items-center justify-center gap-2 min-w-[220px] md:min-w-[260px] cursor-pointer"
               >
-                <img 
-                  src={whatsappIcon} 
-                  alt="" 
+                <img
+                  src={whatsappIcon}
+                  alt=""
                   className="w-5 h-5 md:w-6 md:h-6"
                 />
                 Pesan via WhatsApp
               </Button>
-              
-              <Button 
-                variant="secondary" 
+
+              <Button
+                variant="secondary"
                 size="default"
                 onClick={scrollToOrdering}
                 className="px-10 py-3 text-base md:text-lg font-bold min-w-[220px] md:min-w-[260px] flex items-center justify-center cursor-pointer"
               >
                 Cara Pesan
               </Button>
+
+              <Button
+                variant="outline"
+                size="default"
+                onClick={() => setIsGalleryOpen(true)}
+                className="px-10 py-3 text-base md:text-lg font-bold min-w-[220px] md:min-w-[260px] flex items-center justify-center cursor-pointer"
+              >
+                Galeri Mobil
+              </Button>
             </div>
           </div>
         </div>
+        <ImageCarouselModal
+          images={zenixImages}
+          isOpen={isGalleryOpen}
+          onClose={() => setIsGalleryOpen(false)}
+          title="Galeri Innova Zenix"
+        />
       </Container>
     </section>
   );

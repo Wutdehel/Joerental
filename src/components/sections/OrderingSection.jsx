@@ -1,44 +1,47 @@
 import React from 'react';
 import Container from '../layout/Container';
-import orderingImage from '../../assets/ordering.png'; 
+import orderingImage from '../../assets/ordering.jpeg';
 
 const OrderingSection = () => {
   const steps = [
     {
       number: '01',
       title: 'Hubungi Kami',
-      description: 'Hubungi kami melalui WhatsApp untuk konsultasi awal'
+      description:
+        'Hubungi kami melalui WhatsApp untuk konsultasi Harga dan Tanggal awal',
     },
     {
       number: '02',
-      title: 'Konsultasi',
-      description: 'Konsultasikan kebutuhan beton & pompa dengan tim kami'
+      title: 'Tentukan Lokasi',
+      description: 'Tentukan lokasi tujuan anda dengan admin',
     },
     {
       number: '03',
-      title: 'Tentukan Spesifikasi',
-      description: 'Tentukan mutu, volume, dan jadwal pengecoran'
+      title: 'Tentukan Berapa Lama Sewa',
+      description: 'Tentukan berapa lama anda ingin menyewa mobil',
     },
     {
       number: '04',
-      title: 'Pengiriman',
-      description: 'Beton dikirim ke lokasi proyek sesuai jadwal'
-    }
+      title: 'Penjemputan',
+      description:
+        'Beri tahu kami lokasi penjemputan anda, dan kami akan menjemput anda sesuai waktu yang telah ditentukan',
+    },
   ];
 
   return (
-    <section id="cara-pemesanan" className="py-16 md:py-24 lg:py-32 bg-gray-light">
+    <section
+      id="cara-pemesanan"
+      className="py-16 md:py-24 lg:py-32 bg-gray-light"
+    >
       <Container>
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-20 items-center">
-          
           <div className="w-full">
-            <div 
+            <div
               className="w-full h-[300px] md:h-[350px] lg:h-[400px] bg-cover bg-center bg-no-repeat rounded-2xl shadow-lg"
-              style={{ 
+              style={{
                 backgroundImage: `url(${orderingImage})`,
               }}
-            >
-            </div>
+            ></div>
           </div>
 
           <div className="flex flex-col">
@@ -65,7 +68,6 @@ const OrderingSection = () => {
                 </div>
               ))}
             </div>
-
           </div>
         </div>
       </Container>

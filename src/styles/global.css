@@ -1,17 +1,17 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --color-primary-black: #000000;
+  --color-primary-black: #0b0f14;
   --color-primary-white: #ffffff;
-  --color-secondary-green: #3aa76d;
-  --color-secondary-yellow: #ffc043;
+  --color-secondary-green: #5dd62c;
+  --color-secondary-yellow: #c9a227;
   --color-gray-dark: #1e1e1e;
   --color-gray-light: #f6f6f6;
   --color-gray-medium: #545454;
   --color-gray-border: #e1e1e1;
 
-  --font-cabin: "Cabin", sans-serif;
-  --font-poppins: "Poppins", sans-serif;
+  --font-cabin: 'Cabin', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
 
   --animate-fade-in: fade-in 1s ease forwards;
   --animate-fade-up: fade-up 1s ease forwards;
