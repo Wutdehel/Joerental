@@ -104,12 +104,12 @@ const PumpServiceSection = () => {
                 </div>
               ))}
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 mt-8 md:mt-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mt-8 md:mt-10">
               <Button
                 variant="whatsapp"
-                size="default"
+                size="sm"
                 onClick={handleWhatsAppClick}
-                className="px-10 py-3 text-base md:text-lg font-bold flex items-center justify-center gap-2 min-w-[220px] md:min-w-[260px] cursor-pointer"
+                className="w-full sm:col-span-2 cursor-pointer"
               >
                 <img
                   src={whatsappIcon}
@@ -121,18 +121,18 @@ const PumpServiceSection = () => {
 
               <Button
                 variant="secondary"
-                size="default"
+                size="sm"
                 onClick={scrollToOrdering}
-                className="px-10 py-3 text-base md:text-lg font-bold min-w-[220px] md:min-w-[260px] flex items-center justify-center cursor-pointer"
+                className="w-full cursor-pointer"
               >
                 Cara Pesan
               </Button>
 
               <Button
                 variant="outline"
-                size="default"
+                size="sm"
                 onClick={() => setIsGalleryOpen(true)}
-                className="px-10 py-3 text-base md:text-lg font-bold min-w-[220px] md:min-w-[260px] flex items-center justify-center cursor-pointer text-primary-white"
+                className="w-full cursor-pointer"
               >
                 Galeri Mobil
               </Button>

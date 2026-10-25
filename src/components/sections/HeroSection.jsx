@@ -9,7 +9,7 @@ const HeroSection = () => {
   const handleWhatsAppClick = () => {
     const phoneNumber = '6285885053055';
     const message =
-      'Halo MatrixBeton, saya ingin konsultasi dan pesan beton readymix untuk proyek saya. Mohon infonya, terima kasih.';
+      'Halo Joe Rental, Saya tertarik untuk menyewa mobil. Mohon infonya, terima kasih.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };

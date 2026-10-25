@@ -5,7 +5,7 @@ import whatsappIcon from '../assets/whatsapp.png';
 const FloatingWhatsApp = () => {
   const phoneNumber = '6285885053055';
   const message =
-    'Halo MatrixBeton, saya ada rencana proyek dan butuh info beton readymix. Bisa dibantu?';
+    'Halo Joe Rental, Saya tertarik untuk menyewa mobil. Mohon infonya, terima kasih.';
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
