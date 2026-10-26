@@ -12,8 +12,8 @@ const FAQSection = () => {
           <div>
             <p className="font-poppins text-primary-white/70">
               Untuk keamanan dan kenyamanan, mobil tidak bisa dilepas kunci.
-              Sopir kami akan mengantar ke lokasi tujuan dan menunggu hingga
-              selesai. Setelah itu, sopir akan mengantar kembali ke lokasi awal
+              Driver kami akan mengantar ke lokasi tujuan dan menunggu hingga
+              selesai. Setelah itu, Driver akan mengantar kembali ke lokasi awal
               atau lokasi yang telah disepakati.
             </p>
           </div>
@@ -26,7 +26,7 @@ const FAQSection = () => {
         <div className="space-y-3">
           <p className="font-poppins text-primary-white/70">
             Ya, kami menyediakan layanan sewa mobil untuk perjalanan keluar
-            kota. Sopir kami berpengalaman dan memahami rute perjalanan antar
+            kota. Driver kami berpengalaman dan memahami rute perjalanan antar
             kota, sehingga Anda dapat menikmati perjalanan dengan nyaman dan
             aman.
           </p>

@@ -27,7 +27,7 @@ const TruckComparisonSection = () => {
               <li className="flex items-start gap-2">
                 <span className="text-primary-black text-lg md:text-xl">-</span>
                 <span className="font-poppins text-primary-black text-base md:text-lg">
-                  Jasa Sewa Mobil Premium Dengan Sopir Profesional
+                  Jasa Sewa Mobil Premium Dengan Driver Profesional
                 </span>
               </li>
               <li className="flex items-start gap-2">
