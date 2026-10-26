@@ -14,8 +14,8 @@ const PricingSection = () => {
       image: truckImage,
       prices: [
         { volume: 'Dalam Kota (Termasuk BBM)', price: 'Rp 1.200.000' },
-        { volume: 'Bogor All In', price: 'Rp 1.550.000' },
-        { volume: 'Bandung', price: 'Rp 1.800.000' },
+        { volume: 'Bogor All In (Drop off)', price: 'Rp 1.550.000' },
+        { volume: 'Bandung (Drop off only)', price: 'Rp 1.800.000' },
         { volume: 'Bisa Untuk Kontrak Mingguan, Bulanan atau tahunan' },
       ],
     },
@@ -25,8 +25,8 @@ const PricingSection = () => {
       image: truckImage,
       prices: [
         { volume: 'Dalam Kota (Termasuk BBM)', price: 'Rp 1.000.000' },
-        { volume: 'Bogor All In', price: 'Rp 1.350.000' },
-        { volume: 'Bandung', price: 'Rp 1.600.000' },
+        { volume: 'Bogor All In (Drop off)', price: 'Rp 1.350.000' },
+        { volume: 'Bandung (Drop off only)', price: 'Rp 1.600.000' },
         { volume: 'Bisa Untuk Kontrak Mingguan, Bulanan atau tahunan' },
       ],
     },
