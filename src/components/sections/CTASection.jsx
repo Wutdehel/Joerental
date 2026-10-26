@@ -7,7 +7,7 @@ import whatsappIcon from '../../assets/whatsapp.png';
 const CTASection = () => {
   // Function untuk handle WhatsApp click
   const handleWhatsAppClick = () => {
-    const phoneNumber = '6281234567890'; // Ganti dengan nomor HP kamu
+    const phoneNumber = '6285885053055';
     const message =
       'Halo Joe Rental, Saya tertarik untuk menyewa mobil. Mohon infonya, terima kasih.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

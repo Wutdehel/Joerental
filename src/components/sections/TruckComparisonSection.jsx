@@ -42,6 +42,18 @@ const TruckComparisonSection = () => {
                   Pelayanan Ramah dan Profesional
                 </span>
               </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-black text-lg md:text-xl">-</span>
+                <span className="font-poppins text-primary-black text-base md:text-lg">
+                  Nyaman untuk perjalanan dinas dan bisnis
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-black text-lg md:text-xl">-</span>
+                <span className="font-poppins text-primary-black text-base md:text-lg">
+                  Bebas asap rokok
+                </span>
+              </li>
             </ul>
           </div>
 
@@ -59,6 +71,12 @@ const TruckComparisonSection = () => {
             </h4>
 
             <ul className="space-y-2">
+              <li className="flex items-start gap-2">
+                <span className="text-primary-black text-lg md:text-xl">-</span>
+                <span className="font-poppins text-primary-black text-base md:text-lg">
+                  Pernah Bekerja di istana Presiden sebagai driver
+                </span>
+              </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary-black text-lg md:text-xl">-</span>
                 <span className="font-poppins text-primary-black text-base md:text-lg">

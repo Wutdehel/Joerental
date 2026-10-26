@@ -68,6 +68,12 @@ const Footer = () => {
               <p className="font-poppins text-primary-white/90 text-base md:text-lg font-medium">
                 07.00 – 22.00
               </p>
+              <p className="font-poppins text-primary-white/70 text-base md:text-lg mt-10 ">
+                Contact Person
+              </p>
+              <p className="font-poppins text-primary-white/90 text-base md:text-lg font-medium">
+                081386199189 / 085885053055
+              </p>
             </div>
             <div className="pt-2">
               <Button

@@ -95,12 +95,11 @@ const PumpServiceSection = () => {
                   <p className="font-poppins text-primary-white/70 text-base md:text-lg mb-1 leading-relaxed">
                     {pump.description}
                   </p>
-                  <p className="font-poppins text-primary-white/70 text-base md:text-lg">
-                    Dengan jangkauan pompa{' '}
+                  {/* <p className="font-poppins text-primary-white/70 text-base md:text-lg">
                     <span className="font-bold text-primary-white">
-                      {pump.range}
+                      {pump.highlight}
                     </span>
-                  </p>
+                  </p> */}
                 </div>
               ))}
             </div>
@@ -132,7 +131,7 @@ const PumpServiceSection = () => {
                 variant="outline"
                 size="sm"
                 onClick={() => setIsGalleryOpen(true)}
-                className="w-full cursor-pointer"
+                className="w-full cursor-pointer text-primary-white"
               >
                 Galeri Mobil
               </Button>

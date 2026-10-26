@@ -13,7 +13,7 @@ const PricingSection = () => {
       subtitle: 'VIP Car',
       image: truckImage,
       prices: [
-        { volume: 'Dalam Kota', price: 'Rp 1.200.000' },
+        { volume: 'Dalam Kota (Termasuk BBM)', price: 'Rp 1.200.000' },
         { volume: 'Bogor All In', price: 'Rp 1.550.000' },
         { volume: 'Bandung', price: 'Rp 1.800.000' },
       ],
@@ -23,7 +23,7 @@ const PricingSection = () => {
       subtitle: 'VIP Car',
       image: truckImage,
       prices: [
-        { volume: 'Dalam Kota', price: 'Rp 1.000.000' },
+        { volume: 'Dalam Kota (Termasuk BBM)', price: 'Rp 1.000.000' },
         { volume: 'Bogor All In', price: 'Rp 1.350.000' },
         { volume: 'Bandung', price: 'Rp 1.600.000' },
       ],

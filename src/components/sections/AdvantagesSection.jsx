@@ -9,15 +9,15 @@ import thumbUpIcon from '../../assets/thumb-up-line.png';
 const AdvantagesSection = () => {
   const advantages = [
     {
-      text: 'Keamanan dan kualitas terjamin',
+      text: 'Pernah bekerja sebagai driver di istana presiden',
       icon: shieldIcon,
     },
     {
-      text: 'Mobil siap pakai, hemat waktu dan tenaga',
+      text: 'Mobil siap pakai, bersih, hemat waktu dan tenaga',
       icon: timerIcon,
     },
     {
-      text: 'Dibawa dengan supir profesional dan berpengalaman',
+      text: 'Driver profesional dan berpengalaman kurang lebih 15 tahun dibidangnya',
       icon: connectorIcon,
     },
     {
@@ -45,7 +45,7 @@ const AdvantagesSection = () => {
 
             <ul className="space-y-5 md:space-y-6">
               {advantages.map((item, index) => (
-                <li key={index} className="flex items-start gap-4">
+                <li key={index} className="flex items-center gap-4">
                   <img
                     src={item.icon}
                     alt=""
