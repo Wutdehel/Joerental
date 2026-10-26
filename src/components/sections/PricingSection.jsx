@@ -26,7 +26,7 @@ const PricingSection = () => {
       prices: [
         { volume: 'Dalam Kota (Termasuk BBM)', price: 'Rp 1.000.000' },
         { volume: 'Bogor All In (Drop only)', price: 'Rp 1.350.000' },
-        { volume: 'Bandung (Drop only)', price: 'Rp 1.600.000' },
+        { volume: 'Bandung All In (Drop only)', price: 'Rp 1.600.000' },
         { volume: 'Bisa Untuk Kontrak Mingguan, Bulanan atau tahunan' },
       ],
     },

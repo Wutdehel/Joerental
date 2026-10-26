@@ -67,8 +67,8 @@ const PumpServiceSection = () => {
           Toyota Innova Reborn tetap menjadi primadona di dunia sewa mobil
           berkat ketangguhan mesinnya, suspensi yang empuk, serta kabin yang
           sangat luas untuk keluarga maupun rombongan bisnis. Tersedia dalam
-          pilihan transmisi manual/automatic serta mesin bensin atau diesel yang
-          siap menemani perjalanan dalam dan luar kota Anda.
+          transmisi manual diesel yang siap menemani perjalanan dalam dan luar
+          kota Anda.
         </p>
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-20">
