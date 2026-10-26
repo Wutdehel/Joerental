@@ -94,5 +94,5 @@ export const BANDARA = [
 
 export const CATATAN = [
   'Tidak bisa lepas kunci',
-  'Harga belum termasuk BBM, biaya makan supir, dan tol',
+  'Harga belum termasuk BBM, biaya makan supir, dan tol (Kecuali Perjalanan Jakarta)',
 ];
