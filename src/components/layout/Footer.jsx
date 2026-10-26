@@ -94,7 +94,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col space-y-4 gap-4">
-          <h4 className="font-cabin font-semibold text-primary-white text-lg md:text-xl mb-2">
+          <h4 className="font-cabin font-semibold text-primary-white text-lg md:text-xl mb-2 mt-10">
             Lokasi
           </h4>
           <div className="flex flex-col space-y-4">
